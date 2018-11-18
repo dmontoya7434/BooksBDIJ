@@ -34,8 +34,9 @@ public class Controller {
         ResultSet resultSet = statement.executeQuery(SELECT_QUERY)) {
       resultSet.next();
       label1.setText(resultSet.getString(2));
-      label2.setText(resultSet.getString(3)); }
-      // AutoCloseable objects' close methods are called now
+      label2.setText(resultSet.getString(3));
+    }
+    // AutoCloseable objects' close methods are called now
     catch (SQLException sqlException) {
       sqlException.printStackTrace();
     }

@@ -21,6 +21,7 @@ public class Controller {
   @FXML
   void connect(ActionEvent event) {
 
+    // Connects to the derby database that you install.
     final String DATABASE_URL = "jdbc:derby:lib\\books";
     final String SELECT_QUERY =
         "SELECT authorID, firstName, lastName FROM authors";
